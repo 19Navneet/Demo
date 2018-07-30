@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function(){
+$("#add").click(function(){
+var text= $("input:text").val();
+$("ol").append("<li>"+text+"</li>");});
+$("#rem").click(function(){
+$("li:first-child").remove();});
+});
+</script>
+</head>
+<body>
+<ol>
+<li> BIG </li>
+<li> Ayush </li>
+</ol>
+<input type="text" id="demo">
+<button id="add"> ADD            </button>
+<button id="rem"> REMOVE </button>
+</body>
+</html>
